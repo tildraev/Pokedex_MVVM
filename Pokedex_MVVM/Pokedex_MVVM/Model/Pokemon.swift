@@ -7,17 +7,6 @@
 
 import Foundation
 
-struct Pokedex: Decodable {
-    let count: Int
-    let next: String
-    let previous: String?
-    let results: [PokemonResults]
-}
-
-struct PokemonResults: Decodable {
-    let name: String
-    let url: String
-}
 struct Pokemon: Decodable {
     let abilities: [AbilityDict]
     let moves: [MovesDict]
